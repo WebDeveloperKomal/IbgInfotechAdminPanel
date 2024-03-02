@@ -1,6 +1,6 @@
+// -----------------------------save the data----------------------------------------------
 
 function getAuthToken() {
-
     var userCredentials = {
         email: document.getElementById('email').value,
         password: document.getElementById('password').value
@@ -17,34 +17,41 @@ function getAuthToken() {
         method: 'POST',
         body: JSON.stringify(userCredentials),
         headers: headers,
-
     })
-
         .then(response => {
             if (response.ok) {
-                alert("Login Successfully!");
                 return response.json();
             } else if (response.status === 401) {
-                alert("Invalid Credentials")
                 throw new Error('Invalid credentials. Please check your username and password.');
             } else {
                 throw new Error('Unexpected server error. Please try again later.');
             }
         })
-
         .then(data => {
             console.log('Data:', data);
-            window.location.href = 'Dashboard.html';
-            if (data && data.token) {
-                localStorage.setItem('jwtToken', data.token);
-                alert("Login successfully!");
+            if (data && data.jwtToken) {
+
+                localStorage.setItem('jwtToken', data.jwtToken);
+                console.log('JWT token stored successfully:', data.jwtToken);
+
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Login Successful',
+                    // text: 'JWT token stored successfully',
+                }).then((result) => {
+                    window.location.href = 'Dashboard.html';
+                });
             } else {
-                throw new Error(`Login successfully!. Received: ${JSON.stringify(data)}`);
+                throw new Error('Token not received or invalid.');
             }
         })
-
         .catch(error => {
             console.error('Error:', error);
-            alert('Failed to login. Please try again.');
+
+            Swal.fire({
+                icon: 'error',
+                title: 'Login Failed',
+                text: error.message,
+            });
         });
 }

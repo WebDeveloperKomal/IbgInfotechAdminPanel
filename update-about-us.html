@@ -10,6 +10,10 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script src="about-us.js"></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
         integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
 
@@ -43,14 +47,6 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
-
-    <!-- =======================================================
-  * Template Name: NiceAdmin
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-
     <link rel="stylesheet" type="text/css"
         href="https://www.legaster.com/public/assets/css/bootstrap/css/bootstrap.min.css">
     <!-- themify-icons line icon -->
@@ -73,18 +69,12 @@
 
         <div class="d-flex align-items-center justify-content-between">
             <a href="Dashboard.html" class="logo d-flex align-items-center">
-                <img src="final logo.png" alt="">
+                <img src="blue bg logo-07.png" alt="infotech logo">
                 <!-- <span class="d-none d-lg-block">NiceAdmin</span> -->
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
         </div><!-- End Logo -->
 
-        <div class="search-bar">
-            <form class="search-form d-flex align-items-center" method="POST" action="#">
-                <input type="text" name="query" placeholder="Search" title="Enter search keyword">
-                <button type="submit" title="Search"><i class="bi bi-search"></i></button>
-            </form>
-        </div><!-- End Search Bar -->
 
         <nav class="header-nav ms-auto">
             <ul class="d-flex align-items-center">
@@ -95,158 +85,18 @@
                     </a>
                 </li><!-- End Search Icon-->
 
-                <li class="nav-item dropdown">
-
-                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-                        <i class="bi bi-bell"></i>
-                        <span class="badge bg-primary badge-number">4</span>
-                    </a><!-- End Notification Icon -->
-
-                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
-                        <li class="dropdown-header">
-                            You have 4 new notifications
-                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li class="notification-item">
-                            <i class="bi bi-exclamation-circle text-warning"></i>
-                            <div>
-                                <h4>Lorem Ipsum</h4>
-                                <p>Quae dolorem earum veritatis oditseno</p>
-                                <p>30 min. ago</p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li class="notification-item">
-                            <i class="bi bi-x-circle text-danger"></i>
-                            <div>
-                                <h4>Atque rerum nesciunt</h4>
-                                <p>Quae dolorem earum veritatis oditseno</p>
-                                <p>1 hr. ago</p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li class="notification-item">
-                            <i class="bi bi-check-circle text-success"></i>
-                            <div>
-                                <h4>Sit rerum fuga</h4>
-                                <p>Quae dolorem earum veritatis oditseno</p>
-                                <p>2 hrs. ago</p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li class="notification-item">
-                            <i class="bi bi-info-circle text-primary"></i>
-                            <div>
-                                <h4>Dicta reprehenderit</h4>
-                                <p>Quae dolorem earum veritatis oditseno</p>
-                                <p>4 hrs. ago</p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li class="dropdown-footer">
-                            <a href="#">Show all notifications</a>
-                        </li>
-
-                    </ul><!-- End Notification Dropdown Items -->
-
-                </li><!-- End Notification Nav -->
-
-                <li class="nav-item dropdown">
-
-                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-                        <i class="bi bi-chat-left-text"></i>
-                        <span class="badge bg-success badge-number">3</span>
-                    </a><!-- End Messages Icon -->
-
-                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
-                        <li class="dropdown-header">
-                            You have 3 new messages
-                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li class="message-item">
-                            <a href="#">
-                                <img src="messages-1.jpg" alt="" class="rounded-circle">
-                                <div>
-                                    <h4>Maria Hudson</h4>
-                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                                    <p>4 hrs. ago</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li class="message-item">
-                            <a href="#">
-                                <img src="messages-2.jpg" alt="" class="rounded-circle">
-                                <div>
-                                    <h4>Anna Nelson</h4>
-                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                                    <p>6 hrs. ago</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li class="message-item">
-                            <a href="#">
-                                <img src="messages-3.jpg" alt="" class="rounded-circle">
-                                <div>
-                                    <h4>David Muldon</h4>
-                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                                    <p>8 hrs. ago</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li class="dropdown-footer">
-                            <a href="#">Show all messages</a>
-                        </li>
-
-                    </ul><!-- End Messages Dropdown Items -->
-
-                </li><!-- End Messages Nav -->
 
                 <li class="nav-item dropdown pe-3">
 
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                        <img src="profile-img.jpg" alt="Profile" class="rounded-circle">
-                        <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+                        <img src="images-02.jpg" alt="Profile" class="rounded-circle">
+                        <span class="d-none d-md-block dropdown-toggle ps-2">V. Aacharya</span>
                     </a><!-- End Profile Iamge Icon -->
 
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                         <li class="dropdown-header">
-                            <h6>Kevin Anderson</h6>
-                            <span>Web Designer</span>
+                            <h6>Vikramraj Aacharya</h6>
+                            <span>Director</span>
                         </li>
                         <li>
                             <hr class="dropdown-divider">
@@ -263,9 +113,9 @@
                         </li>
 
                         <li>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
+                            <a class="dropdown-item d-flex align-items-center" href="index.html">
                                 <i class="bi bi-box-arrow-right"></i>
-                                <span>Sign Out</span>
+                                <span>Log Out</span>
                             </a>
                         </li>
 
@@ -315,6 +165,13 @@
                         </a>
                     </li>
 
+                    <li>
+                        <a href="footer-gallery.html">
+                            <i class="bi bi-circle"></i><span>Gallary</span>
+                        </a>
+                    </li>
+
+
                 </ul>
             </li>
             <!-- End Components Nav -->
@@ -350,12 +207,17 @@
                 </a>
                 <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                     <li>
+                        <a href="infoservice.html">
+                            <i class="bi bi-circle"></i><span>Services</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="Services.html">
                             <i class="bi bi-circle"></i><span>Service Content</span>
                         </a>
                     </li>
                     <li>
-                        <a href="Add-services.html">
+                        <a href="Services2.html">
                             <i class="bi bi-circle"></i><span>Why IBG Infotech</span>
                         </a>
                     </li>
@@ -402,21 +264,10 @@
                     <span>Our Team</span>
                 </a>
             </li>
-            <!-- End Icons Nav -->
-
-
-            <!-- <li class="nav-item">
-                <a class="nav-link collapsed" href="#">
-                    <i class="bi bi-person-circle"></i>
-                    <span>Our Portfolio</span>
-                </a>
-            </li> -->
-
-            <!-- End Icons Nav -->
 
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="Add-blog.html">
+                <a class="nav-link collapsed" href="Blogs.html">
                     <i class="bi bi-substack"></i>
                     <span>Blogs</span>
                 </a>
@@ -434,6 +285,14 @@
 
 
             <li class="nav-item">
+                <a class="nav-link collapsed" href="Add-contact us.html">
+                    <i class="bi bi-person-lines-fill"></i>
+                    <span>Contact Us</span>
+                </a>
+            </li>
+
+
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="Footer.html">
                     <i class="bi bi-pin-map-fill"></i>
                     <span>Footer</span>
@@ -442,63 +301,21 @@
             <!-- End Contact Page Nav -->
 
 
-
-
-            <li class="nav-heading">Pages</li>
-            <!-- 
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="users-profile.html">
-                    <i class="bi bi-person"></i>
-                    <span>Profile</span>
-                </a>
-            </li> -->
-            <!-- End Profile Page Nav -->
-
-            <!-- <li class="nav-item">
-                <a class="nav-link collapsed" href="pages-faq.html">
-                    <i class="bi bi-question-circle"></i>
-                    <span>F.A.Q</span>
-                </a>
-            </li> -->
-            <!-- End F.A.Q Page Nav -->
-
-
-
             <li class="nav-item">
                 <a class="nav-link collapsed" href="pages-register.html">
                     <i class="bi bi-card-list"></i>
                     <span>Register</span>
                 </a>
             </li>
-            <!-- End Register Page Nav -->
 
 
-
-            <!-- <li class="nav-item">
-                <a class="nav-link collapsed" href="pages-login.html">
-                    <i class="bi bi-box-arrow-in-right"></i>
-                    <span>Log Out</span>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="mail.html">
+                    <i class="bi bi-envelope-fill"></i>
+                    <span>Subscribe Member</span>
                 </a>
-            </li> -->
-            <!-- End Login Page Nav -->
+            </li>
 
-
-
-            <!-- <li class="nav-item">
-                <a class="nav-link collapsed" href="pages-error-404.html">
-                    <i class="bi bi-dash-circle"></i>
-                    <span>Error 404</span>
-                </a>
-            </li> -->
-            <!-- End Error 404 Page Nav -->
-
-            <!-- <li class="nav-item">
-                <a class="nav-link collapsed" href="pages-blank.html">
-                    <i class="bi bi-file-earmark"></i>
-                    <span>Blank</span>
-                </a>
-            </li> -->
-            <!-- End Blank Page Nav -->
 
         </ul>
 
@@ -513,12 +330,7 @@
 
         <div class="pagetitle">
             <h1>About Us</h1>
-            <!-- <nav>
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Contact List</li>
-                </ol>
-            </nav> -->
+
         </div><!-- End Page Title -->
 
 
@@ -545,54 +357,75 @@
                                         <div class="card-block">
 
 
-                                            <form action="https://www.legaster.com/admin-panel/edit-service-category/66"
-                                                method="post" enctype="multipart/form-data">
+                                            <form action="#" method="post" enctype="multipart/form-data">
                                                 <input type="hidden" name="csrf_test_name"
                                                     value="096ea39265669eaff30f4bc704d6260c" />
+
+
+                                                <div class="form-group row">
+                                                    <div class="col-sm-12">
+                                                        <!-- <label class="col-form-label">ID</label> -->
+                                                        <input type="hidden" class="form-control" name="id" id="id">
+                                                    </div>
+                                                </div>
+
+
 
                                                 <div class="form-group row">
                                                     <div class="col-sm-12">
                                                         <label class="col-form-label">Heading</label>
-                                                        <input type="text" class="form-control" name="heading">
+                                                        <input type="text" class="form-control" name="heading"
+                                                            id="heading">
                                                     </div>
                                                 </div>
 
 
 
                                                 <div class="form-group row">
-                                                    <div class="col-sm-6">
+                                                    <div class="col-sm-12">
                                                         <label class="col-form-label">Text1</label>
-                                                        <input type="text" class="form-control" name="text1">
-                                                    </div>
-
-
-                                                    <div class="col-sm-6">
-                                                        <label class="col-form-label">Text2</label>
-                                                        <input type="text" class="form-control" name="text2">
+                                                        <textarea class="form-control" rows="5" cols="5" colname="text1"
+                                                            id="text1"></textarea>
                                                     </div>
                                                 </div>
+
+
+
+                                                <div class="form-group row">
+                                                    <div class="col-sm-12">
+                                                        <label class="col-form-label">Text2</label>
+                                                        <textarea class="form-control" rows="5" cols="5" colname="text2"
+                                                            id="text2"></textarea>
+                                                    </div>
+                                                </div>
+
 
 
                                                 <div class="form-group row">
                                                     <div class="col-sm-12">
                                                         <label class="col-form-label">Mission</label>
-                                                        <input type="text" class="form-control" name="mission">
+                                                        <textarea class="form-control" rows="5" cols="5"
+                                                            colname="mission" id="mission"></textarea>
                                                     </div>
                                                 </div>
+
 
 
                                                 <div class="form-group row">
                                                     <div class="col-sm-12">
                                                         <label class="col-form-label">Vision</label>
-                                                        <input type="text" class="form-control" name="vision">
+                                                        <textarea class="form-control" rows="5" cols="5"
+                                                            colname="vision" id="vision"></textarea>
                                                     </div>
                                                 </div>
+
 
 
                                                 <div class="form-group row">
                                                     <div class="col-sm-12">
                                                         <label class="col-form-label">Value</label>
-                                                        <input type="text" class="form-control" name="value">
+                                                        <textarea class="form-control" rows="5" cols="5" colname="value"
+                                                            id="value"></textarea>
                                                     </div>
                                                 </div>
 
@@ -600,15 +433,18 @@
                                                 <div class="form-group row">
                                                     <div class="col-sm-12">
                                                         <label class="col-form-label">Experience</label>
-                                                        <input type="text" class="form-control" name="experience">
+                                                        <input type="text" class="form-control" name="experience"
+                                                            id="experience">
                                                     </div>
                                                 </div>
+
 
 
                                                 <div class="form-group row">
                                                     <div class="col-sm-12">
                                                         <label class="col-form-label">Award</label>
-                                                        <input type="text" class="form-control" name="award">
+                                                        <textarea class="form-control" rows="5" cols="5"
+                                                            colname="award_text" id="award_text"></textarea>
                                                     </div>
                                                 </div>
 
@@ -616,16 +452,17 @@
                                                 <div class="form-group row">
                                                     <div class="col-sm-12">
                                                         <label class="col-form-label">Image</label>
-                                                        <img class="slide_img form-control" src="#">
+                                                        <img id="selected-image" class="slide_img form-control" src="#"
+                                                            alt="Selected Image">
                                                     </div>
                                                 </div>
 
-                                                <!-- https://www.legaster.com/public/assets/images/service_category/1668278560_e0d973a644f7d48b103d.jpg -->
 
                                                 <div class="form-group row">
                                                     <div class="col-sm-12">
                                                         <label class="col-form-label">Upload Image</label>
-                                                        <input type="file" class="form-control" name="image">
+                                                        <input type="file" class="form-control" name="image"
+                                                            id="image-input">
                                                     </div>
                                                 </div>
 
@@ -634,7 +471,8 @@
                                                 <div class="form-group row">
                                                     <div class="col-sm-12">
                                                         <label class="col-form-label">Member Count</label>
-                                                        <input type="text" class="form-control" name="member count">
+                                                        <input type="text" class="form-control" name="member_count"
+                                                            id="member_count">
                                                     </div>
                                                 </div>
 
@@ -642,7 +480,8 @@
                                                 <div class="form-group row">
                                                     <div class="col-sm-12">
                                                         <label class="col-form-label">Awards Count</label>
-                                                        <input type="text" class="form-control" name="award count">
+                                                        <input type="text" class="form-control" name="awards_count"
+                                                            id="awards_count">
                                                     </div>
                                                 </div>
 
@@ -650,7 +489,8 @@
                                                 <div class="form-group row">
                                                     <div class="col-sm-12">
                                                         <label class="col-form-label">Project</label>
-                                                        <input type="text" class="form-control" name="project">
+                                                        <input type="text" class="form-control" name="project"
+                                                            id="project">
                                                     </div>
                                                 </div>
 
@@ -659,7 +499,8 @@
                                                 <div class="form-group row">
                                                     <div class="col-sm-12">
                                                         <label class="col-form-label">Client review</label>
-                                                        <input type="text" class="form-control" name="client review">
+                                                        <input type="text" class="form-control" name="client_review"
+                                                            id="client_review">
                                                     </div>
                                                 </div>
 
@@ -668,16 +509,19 @@
                                                 <div class="form-group row">
                                                     <div class="col-sm-12">
                                                         <label class="col-form-label">Terminal</label>
-                                                        <input type="text" class="form-control" name="terminal">
+                                                        <textarea class="form-control" rows="5" cols="5"
+                                                            colname="terminal" id="terminal"></textarea>
                                                     </div>
                                                 </div>
 
 
 
+
                                                 <div class="form-group row">
                                                     <div class="col-md-12">
-                                                        <a href="About-us.html" button
-                                                            class="btn btn-primary">Save</button></a>
+                                                        <a href="About-us.html" id="updateBtn" button
+                                                            class="btn btn-primary" style="color: white;"
+                                                            onclick="updateData();">Update</button></a>
                                                     </div>
                                                 </div>
 
@@ -746,12 +590,6 @@
         integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
         data-cf-beacon='{"rayId":"8465544dad3f0e38","version":"2023.10.0","token":"68c5ca450bae485a842ff76066d69420"}'
         crossorigin="anonymous"></script>
-
-
-
-
-
-
 
 
     <script type="text/javascript" src="https://www.legaster.com/public/assets/js/jquery/jquery.min.js"></script>
@@ -840,6 +678,52 @@
 
 
         });
+    </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const updateData = JSON.parse(localStorage.getItem('updateData'));
+            if (updateData) {
+                console.log('Retrieved updateData:', updateData);
+                // Update form fields with retrieved data
+                document.getElementById('selected-image').src = 'data:image/jpeg;base64,' + updateData.image;
+                document.getElementById('heading').value = updateData.heading;
+                document.getElementById('text1').value = updateData.text1;
+                document.getElementById('text2').value = updateData.text2;
+                document.getElementById('mission').value = updateData.mission;
+                document.getElementById('vision').value = updateData.vision;
+                document.getElementById('value').value = updateData.value;
+                document.getElementById('experience').value = updateData.experience;
+                document.getElementById('award_text').value = updateData.award_text;
+                document.getElementById('member_count').value = updateData.member_count;
+                document.getElementById('awards_count').value = updateData.awards_count;
+                document.getElementById('project').value = updateData.project;
+                document.getElementById('client_review').value = updateData.client_review;
+                document.getElementById('terminal').value = updateData.terminal;
+                document.getElementById('id').value = updateData.id;
+            } else {
+                console.error('No update data found in local storage');
+            }
+            updateData();
+        });
+    </script>
+
+    <script>
+
+        const updateImageInput = document.getElementById('image-input');
+        const updateSelectedImage = document.getElementById('selected-image');
+        updateImageInput.addEventListener('change', function () {
+            if (updateImageInput.files && updateImageInput.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+
+                    updateSelectedImage.src = e.target.result;
+                };
+                reader.readAsDataURL(updateImageInput.files[0]);
+            }
+        });
+
     </script>
 
 </body>
